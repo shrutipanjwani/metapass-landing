@@ -12,13 +12,13 @@ button {
 }
 
 .button {
-  color: var(--white-color);
-  background: linear-gradient(94.14deg, #f5883f 0%, #d15063 100%);
+  color: var(--black-color);
+  background: transparent;
 }
 
 .gradient-button {
   color: var(--white-color);
-  background: linear-gradient(94.14deg, #f5883f 0%, #d15063 100%);
+  background: linear-gradient(135deg, #6699ff 0%, #ff3366 100%);
 }
 
 .button a {

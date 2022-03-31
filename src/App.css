@@ -7,17 +7,17 @@
   --grey-color: #eee;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Azonix";
   src: local("Azonix"), url(../public/Azonix.otf) format("truetype");
-}
+} */
 
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  font-family: "Azonix";
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 

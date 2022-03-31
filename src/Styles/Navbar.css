@@ -1,0 +1,152 @@
+/* Navbar/ Header Styling */
+
+.NavbarItems {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.navbar-logo {
+  width: 7%;
+  object-fit: cover;
+  justify-self: start;
+  margin-left: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 75vw;
+  justify-content: end;
+  margin-right: 1rem;
+  margin-top: 0.8rem;
+}
+
+.nav-links .nav-link {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links .nav-link:hover {
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-link::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0%;
+  position: absolute;
+  top: 25px;
+  transition: all ease-in-out 250ms;
+  margin: 0 0 0 10%;
+}
+.nav-link:hover::before {
+  width: 95%;
+  margin: auto;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.nav-link-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .NavbarItems {
+    position: relative;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  .nav-links.active {
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 3;
+    background-color: var(--white-color);
+  }
+
+  .nav-link {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+  }
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  .nav-link-mobile {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 50%;
+    background-color: var(--magenta-color);
+    text-decoration: none;
+    color: var(--off-white-color);
+    font-size: 1.2rem;
+  }
+
+  .NavbarItems Button {
+    display: none;
+  }
+  .nav-link::before {
+    content: "";
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-logo {
+    width: 12%;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .navbar-logo {
+    width: 18%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .navbar-logo {
+    width: 25%;
+    margin-top: 10px;
+  }
+}
