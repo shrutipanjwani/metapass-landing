@@ -110,3 +110,9 @@ main {
 .community .socials li {
   margin-right: 20px;
 }
+
+@media screen and (max-width: 900) {
+  main {
+    margin-top: 130px;
+  }
+}

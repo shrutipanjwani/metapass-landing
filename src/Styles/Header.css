@@ -21,20 +21,32 @@ header .header-content h1 {
   letter-spacing: -1px;
 }
 
+header .header-content h1 .hero-content-line {
+  height: 58px;
+  overflow: hidden;
+}
+
 header .header-content p {
   color: var(--grey-color);
 }
 
 header .header-image {
-  width: 40%;
+  position: relative;
+  width: 50%;
+}
+
+header .header-image .header-image-inner {
+  position: absolute;
+  overflow: hidden;
 }
 
 header .header-image img {
-  width: 120%;
+  width: 100%;
 }
 
 header .backed {
   text-align: center;
+  margin-top: 10%;
 }
 
 header .backed .backed-flex {
@@ -48,6 +60,12 @@ header .backed .backed-flex img {
   width: 4%;
 }
 
+@media screen and (max-width: 1200px) {
+  header .header-content h1 {
+    font-size: 2.3rem;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   header .header-flex {
     width: 80%;
@@ -57,7 +75,7 @@ header .backed .backed-flex img {
     margin-top: 50px;
   }
   header .header-content h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -73,7 +91,7 @@ header .backed .backed-flex img {
     margin: auto;
   }
   header .backed {
-    margin-top: 50px;
+    margin-top: 50%;
   }
 }
 
@@ -90,5 +108,23 @@ header .backed .backed-flex img {
   }
   header .backed .backed-flex img {
     width: 8%;
+  }
+  header .backed {
+    margin-top: 70%;
+  }
+  header .backed h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  header .header-content h1 {
+    font-size: 1.6rem;
+  }
+  header .header-content h1 .hero-content-line {
+    height: 44px;
+  }
+  header .backed {
+    margin-top: 80%;
   }
 }

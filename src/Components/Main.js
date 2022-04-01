@@ -11,7 +11,7 @@ import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 const Main = () => {
   return (
     <main>
-      <div className="features-grid">
+      <div className="features-grid" data-aos="fade-up">
         <div className="feature-image">
           <img src={token} alt="token" />
         </div>
@@ -36,7 +36,7 @@ const Main = () => {
           <img src={live} alt="live" />
         </div>
       </div>
-      <div className="features-method">
+      <div className="features-method" data-aos="fade-up">
         <h1>Fast and easy ticket verification</h1>
         <p>Built with security and easy-of-use in mind.</p>
         <div className="methods-flex">
@@ -59,7 +59,7 @@ const Main = () => {
             </a>
           </div>
         </div>
-        <div className="community">
+        <div className="community" data-aos="fade-up">
           <h1>Be a part of our awesome community!</h1>
           <ul className="socials">
             <li>
