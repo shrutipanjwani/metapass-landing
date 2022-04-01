@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../Assets/metapass transparent.png";
 import "../Styles/Navbar.css";
 import GradientButton from "./GradientButton";
