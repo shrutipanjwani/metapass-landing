@@ -9,8 +9,10 @@ const Footer = () => {
     <footer>
       <div className="footer-container">
         <div className="footer-col">
-          <img className="navbar-logo" src={logo} alt="Logo" />
-          <span>Metapass</span>
+          <div className="footer-logo-flex">
+            <img src={logo} alt="Logo" />
+            <p>&nbsp;Metapass</p>
+          </div>
           <ul className="footer-socials">
             <li>
               <a href="/">
@@ -27,15 +29,23 @@ const Footer = () => {
         <div className="footer-col">
           <ul className="footer-links">
             <h3>Company</h3>
-            <li>Twitter</li>
-            <li>gm@metapasshq.xyz</li>
+            <li>
+              <a href="/">Twitter</a>
+            </li>
+            <li>
+              <a href="/">gm@metapasshq.xyz</a>
+            </li>
           </ul>
         </div>
         <div className="footer-col">
           <ul className="footer-links">
             <h3>Legal</h3>
-            <li>Terms of Service</li>
-            <li>Privacy Policy</li>
+            <li>
+              <a href="/">Terms of Service</a>
+            </li>
+            <li>
+              <a href="/">Privacy Policy</a>
+            </li>
           </ul>
         </div>
       </div>

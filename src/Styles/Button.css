@@ -1,7 +1,6 @@
 button {
   z-index: 1;
   cursor: pointer;
-  text-transform: uppercase;
   padding: 5px 12px;
   letter-spacing: 0.5px;
   border-radius: 8px;
@@ -12,13 +11,23 @@ button {
 }
 
 .button {
-  color: var(--black-color);
-  background: transparent;
+  color: #935cfe;
+  background: var(--white-color);
+}
+
+.button:hover {
+  background-color: transparent;
+  color: var(--white-color);
 }
 
 .gradient-button {
   color: var(--white-color);
   background: linear-gradient(135deg, #6699ff 0%, #ff3366 100%);
+}
+
+.gradient-button:hover {
+  background-color: #935cfe;
+  color: var(--white-color);
 }
 
 .button a {

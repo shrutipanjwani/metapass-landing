@@ -4,7 +4,7 @@
   --third-color: #e68d94;
   --white-color: #fff;
   --black-color: #000;
-  --grey-color: #eee;
+  --grey-color: rgb(19, 17, 17);
 }
 
 /* @font-face {
@@ -32,4 +32,8 @@ html {
 
 body {
   overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
 }

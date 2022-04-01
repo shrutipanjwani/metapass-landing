@@ -1,7 +1,112 @@
+main {
+  margin-top: 50px;
+}
 .features-grid {
+  width: 80%;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.feature-image img {
+  width: 90%;
+}
+
+.feature-grid-content {
+  width: 80%;
+  margin: auto;
+}
+
+.feature-grid-content h1,
+.feature-grid-content p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.feature-grid-content a {
+  text-decoration: none;
+  color: #935cfe;
+}
+
+.features-method {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.features-method h1,
+.features-method p {
+  text-align: center;
+}
+
+.features-method .methods-flex {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.features-method .methods-flex .method-image {
+  width: 40%;
+}
+
+.features-method .methods-flex .method-image img {
+  width: 100%;
+}
+
+.features-method .methods-flex .method-content {
+  width: 38%;
+  text-align: left;
+  margin-top: 80px;
+}
+
+.features-method .methods-flex .method-content .method-content-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.features-method .methods-flex .method-content a {
+  color: var(--black-color);
+}
+
+.features-method .methods-flex .method-content .method-content-box p {
+  margin-left: 10px;
+}
+
+.features-method .methods-flex .method-content .method-content-box svg {
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #935cfe;
+  color: var(--white-color);
+}
+
+.community {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--white-color);
+  background: linear-gradient(135deg, #6699ff 0%, #ff3366 100%);
+  padding: 50px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.community .socials {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.community .socials li {
+  margin-right: 20px;
 }

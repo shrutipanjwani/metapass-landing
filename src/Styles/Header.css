@@ -1,0 +1,94 @@
+header {
+  width: 100%;
+}
+
+header .header-flex {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .header-content {
+  width: 50%;
+  margin-top: 100px;
+}
+
+header .header-content h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+header .header-content p {
+  color: var(--grey-color);
+}
+
+header .header-image {
+  width: 40%;
+}
+
+header .header-image img {
+  width: 120%;
+}
+
+header .backed {
+  text-align: center;
+}
+
+header .backed .backed-flex {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .backed .backed-flex img {
+  width: 4%;
+}
+
+@media screen and (max-width: 1024px) {
+  header .header-flex {
+    width: 80%;
+  }
+
+  header .header-content {
+    margin-top: 50px;
+  }
+  header .header-content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header .header-flex {
+    flex-direction: column;
+  }
+  header .header-content {
+    width: 100%;
+  }
+  header .header-image {
+    width: 60%;
+    margin: auto;
+  }
+  header .backed {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header .header-flex {
+    width: 90%;
+  }
+  header .header-image {
+    width: 80%;
+    margin-top: 20px;
+  }
+  header .header-content {
+    margin-top: 30px;
+  }
+  header .backed .backed-flex img {
+    width: 8%;
+  }
+}
