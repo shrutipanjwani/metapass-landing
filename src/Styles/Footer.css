@@ -49,3 +49,19 @@ footer .footer-container .footer-col .footer-socials li svg {
   text-align: center;
   padding: 10px;
 }
+
+@media screen and (max-width: 768px) {
+  footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+  }
+  footer .footer-container .footer-col img {
+    width: 10%;
+  }
+}

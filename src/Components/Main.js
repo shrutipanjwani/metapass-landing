@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/Main.css";
+import GradientButton from "./GradientButton";
 import Button from "./Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faQrcode } from "@fortawesome/free-solid-svg-icons";
@@ -57,6 +58,28 @@ const Main = () => {
                 <p>One time QR code for IRL Events</p>
               </div>
             </a>
+          </div>
+        </div>
+        <div className="pricing" data-aos="fade-up">
+          <h1>Pricing</h1>
+          <p>Completely free for creators</p>
+          <br />
+          <div className="pricing-box">
+            <h1>Free</h1>
+            <div className="price-flex">
+              <h2>$0</h2>
+              <span>/month</span>
+            </div>
+            <ul>
+              <li>Make Unlimited events</li>
+              <li>No limit on tickets</li>
+              <li>No commission</li>
+            </ul>
+            <GradientButton>
+              <a href="/">
+                Create an event&nbsp; <FontAwesomeIcon icon={faArrowRight} />{" "}
+              </a>
+            </GradientButton>
           </div>
         </div>
         <div className="community" data-aos="fade-up">
