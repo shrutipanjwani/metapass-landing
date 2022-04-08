@@ -9,16 +9,21 @@ header .header-flex {
   justify-content: space-between;
 }
 
+header .header-content-inner p {
+  margin: 1rem 0 0 0;
+}
+
 header .header-content {
   width: 50%;
-  margin-top: 100px;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
 }
 
 header .header-content h1 {
   font-size: 3rem;
   line-height: 1.2;
   font-weight: 700;
-  letter-spacing: -1px;
+  letter-spacing: -2px;
 }
 
 header .header-content h1 .hero-content-line {

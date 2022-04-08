@@ -9,12 +9,13 @@
 }
 
 .navbar-logo {
-  width: 7%;
+  width: 6rem;
   object-fit: cover;
   justify-self: start;
   margin-left: 20px;
   padding: 10px;
   cursor: pointer;
+  margin-top: 1rem;
 }
 
 .nav-links {
@@ -25,6 +26,7 @@
   text-align: center;
   width: 75vw;
   justify-content: end;
+  align-items: center;
   margin-right: 1rem;
   margin-top: 0.8rem;
 }
@@ -86,6 +88,7 @@
     transition: all 0.5s ease;
     z-index: 3;
     background-color: var(--white-color);
+    text-decoration: none;
   }
 
   .nav-link {
@@ -93,13 +96,14 @@
     padding: 2rem;
     width: 100%;
     display: table;
+    text-decoration: none;
   }
 
   .navbar-logo {
     position: absolute;
     top: 0;
     left: 0;
-    width: 10%;
+    width: 8rem;
   }
   .menu-icon {
     display: block;

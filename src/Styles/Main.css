@@ -141,7 +141,7 @@ main {
   color: var(--white-color);
   background: linear-gradient(135deg, #6699ff 0%, #ff3366 100%);
   padding: 50px;
-  border-radius: 20px;
+  border-radius: 10px;
   margin-top: 20px;
 }
 

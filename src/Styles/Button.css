@@ -13,21 +13,26 @@ button {
 .button {
   color: #935cfe;
   background: var(--white-color);
+  padding: 0.5rem 1.6rem;
+  font-weight: 500;
 }
 
 .button:hover {
-  background-color: transparent;
+  background-color: rgba(141, 141, 255, 0.815);
   color: var(--white-color);
 }
 
 .gradient-button {
   color: var(--white-color);
-  background: linear-gradient(135deg, #6699ff 0%, #ff3366 100%);
+  background: linear-gradient(135deg, #87afff 0%, #ff5e86 100%);
+  padding: 0.5rem 1rem;
 }
 
 .gradient-button:hover {
   background-color: #935cfe;
   color: var(--white-color);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
 
 .button a {

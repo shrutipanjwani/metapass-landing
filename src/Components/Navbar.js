@@ -8,50 +8,55 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const MenuItems = [
-  {
-    title: "Join Community",
-    url: "/Home",
-    cName: "nav-link",
-  },
+	{
+		title: "Join Community",
+		url: "https://discord.gg/CBQ5YNnFXx",
+		cName: "nav-link",
+	},
 ];
 
 const Navbar = () => {
-  const [clicked, setClicked] = useState(false);
-  const handleClick = () => {
-    setClicked(!clicked);
-  };
+	const [clicked, setClicked] = useState(false);
+	const handleClick = () => {
+		setClicked(!clicked);
+	};
 
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  });
+	useEffect(() => {
+		AOS.init();
+		AOS.refresh();
+	});
 
-  return (
-    <nav className="NavbarItems" data-aos="fade-down">
-      <img className="navbar-logo" src={logo} alt="Logo" />
-      <div className="menu-icon" onClick={handleClick}>
-        {clicked ? (
-          <FontAwesomeIcon icon={faTimes} />
-        ) : (
-          <FontAwesomeIcon icon={faBars} />
-        )}
-      </div>
-      <ul className={clicked ? "nav-links active" : "nav-links"}>
-        {MenuItems.map((item, index) => {
-          return (
-            <li key={index}>
-              <a className={item.cName} href={item.url}>
-                {item.title}
-              </a>
-            </li>
-          );
-        })}
-        <li>
-          <GradientButton>Launch App</GradientButton>
-        </li>
-      </ul>
-    </nav>
-  );
+	return (
+		<nav className="NavbarItems" data-aos="fade-down">
+			<img className="navbar-logo" src={logo} alt="Logo" />
+			<div className="menu-icon" onClick={handleClick}>
+				{clicked ? (
+					<FontAwesomeIcon icon={faTimes} />
+				) : (
+					<FontAwesomeIcon icon={faBars} />
+				)}
+			</div>
+			<ul className={clicked ? "nav-links active" : "nav-links"}>
+				{MenuItems.map((item, index) => {
+					return (
+						<li key={index}>
+							<a className={item.cName} href={item.url}>
+								{item.title}
+							</a>
+						</li>
+					);
+				})}
+				<li>
+					<GradientButton>
+						<a href="https://app.metapasshq.xyz/" target={"_blank"}>
+							{" "}
+							Launch App
+						</a>
+					</GradientButton>
+				</li>
+			</ul>
+		</nav>
+	);
 };
 
 export default Navbar;
