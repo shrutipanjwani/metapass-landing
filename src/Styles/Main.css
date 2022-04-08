@@ -111,6 +111,11 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.price-flex {
+  font-weight: 500;
 }
 
 .pricing .pricing-box ul {
@@ -155,6 +160,7 @@ main {
 .community .socials li {
   margin-right: 20px;
 }
+
 
 @media screen and (max-width: 1024px) {
   .features-method .methods-flex .method-content {

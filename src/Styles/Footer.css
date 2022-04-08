@@ -20,6 +20,23 @@ footer .footer-container .footer-col .footer-logo-flex {
   margin-bottom: 20px;
 }
 
+.footer-logo-flex{
+  margin: 0 0 0 5rem;
+  transform: scale(1.5);
+}
+
+.separator {
+  width: 80%;
+}
+
+.footer-links h3 {
+  margin: 0 0 1rem 0;
+}
+
+.footer-links li {
+  margin: 0 0 0.5rem 0;
+}
+
 footer .footer-container .footer-col a {
   color: #935cfe;
 }
@@ -41,13 +58,14 @@ footer .footer-container .footer-col .footer-socials li {
 }
 
 footer .footer-container .footer-col .footer-socials li svg {
-  font-size: 20px;
+  font-size: 30px;
   color: #935cfe;
 }
 
 .copyright {
   text-align: center;
   padding: 10px;
+  padding: 0 0 4rem 0;
 }
 
 @media screen and (max-width: 768px) {
