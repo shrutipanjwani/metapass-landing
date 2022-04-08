@@ -32,9 +32,6 @@ const Footer = () => {
 					<ul className="footer-links">
 						<h3>Company</h3>
 						<li>
-							<a href="https://twitter.com/metapassHQ">Twitter</a>
-						</li>
-						<li>
 							<a href="mailto:gm@metapasshq.xyz">
 								gm@metapasshq.xyz
 							</a>

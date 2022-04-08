@@ -40,8 +40,10 @@ header .header-image {
   width: 50%;
 }
 
-header .header-image .header-image-inner {
-  position: absolute;
+
+.header-image-inner video {
+  height: 500px;
+  width: 750px;
   overflow: hidden;
 }
 
@@ -104,9 +106,10 @@ header .backed .backed-flex img {
   header .header-flex {
     width: 90%;
   }
-  header .header-image {
-    width: 100%;
-    margin-top: 20px;
+  header .header-image-inner video {
+    width: 300px;
+    height: 300px;
+    margin: 0
   }
   header .header-content {
     margin-top: 30px;
@@ -127,6 +130,6 @@ header .backed .backed-flex img {
     height: 44px;
   }
   header .backed {
-    margin-top: 90%;
+    margin-top: 10%;
   }
 }

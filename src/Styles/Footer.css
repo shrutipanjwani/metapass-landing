@@ -82,4 +82,7 @@ footer .footer-container .footer-col .footer-socials li svg {
   footer .footer-container .footer-col img {
     width: 10%;
   }
+  .footer-logo-flex {
+    visibility: hidden;
+  }
 }
