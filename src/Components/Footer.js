@@ -12,9 +12,6 @@ const Footer = () => {
 			</center>
 			<div className="footer-container">
 				<div className="footer-col">
-					<div className="footer-logo-flex">
-						<img src={logo} alt="Logo" />
-					</div>
 					<ul className="footer-socials">
 						<li>
 							<a href="https://twitter.com/metapassHQ">
