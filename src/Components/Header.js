@@ -104,12 +104,14 @@ const Header = () => {
 					>
 						<video
 							controls={false}
-							autoPlay={true}
-							loop={true}
+							autoPlay
+							loop
 							playsInline
+							muted
 							ref={videoRef}
 						>
 							<source src={headerVideo} type="video/mp4" />
+							Your Browser doesn't support videos.
 						</video>
 					</div>
 				</div>
