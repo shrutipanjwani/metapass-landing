@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { TweenMax, TimelineLite, Power3 } from "gsap";
 import "../Styles/Header.css";
 import GradientButton from "./GradientButton";
-import headerimage from "../Assets/FloatingCard_Animation_4.mp4";
+import headerVideo from "../Assets/FloatingCard_Animation_4.mp4";
 import polygon from "../Assets/polygon.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -14,12 +14,8 @@ const Header = () => {
 	let videoRef = useRef(null);
 
 	let tl = new TimelineLite({ delay: 0.8 });
-	const setPlayBack = () => {
-		videoRef.current.autoPlay = true;
-		videoRef.current.playbackRate = 1.1;
-	};
 	useEffect(() => {
-		const headerimage = images.firstElementChild;
+		const headerVideo = images.firstElementChild;
 		const healineFirst = content.children[0].children[0];
 		const healineSecond = healineFirst.nextSibling;
 		const contentP = content.children[1];
@@ -28,12 +24,12 @@ const Header = () => {
 		TweenMax.to(app, 0, { css: { visibility: "visible" } });
 
 		tl.from(
-			headerimage,
+			headerVideo,
 			1.2,
 			{ y: 1280, ease: Power3.easeOut },
 			"Start"
 		).from(
-			headerimage.firstElementChild,
+			headerVideo.firstElementChild,
 			2,
 			{ scale: 1.6, ease: Power3.easeOut },
 			0.2
@@ -112,9 +108,8 @@ const Header = () => {
 							loop={true}
 							playsInline
 							ref={videoRef}
-							onCanPlay={() => setPlayBack()}
 						>
-							<source src={headerimage} type="video/mp4" />
+							<source src={headerVideo} type="video/mp4" />
 						</video>
 					</div>
 				</div>
