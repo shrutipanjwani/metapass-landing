@@ -8,6 +8,7 @@ import token from "../Assets/token.avif";
 import live from "../Assets/live.avif";
 import ticket from "../Assets/ticket1.png";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
+import { Heading } from "@chakra-ui/react";
 
 const Main = () => {
   return (
@@ -61,7 +62,9 @@ const Main = () => {
           </div>
         </div>
         <div className="pricing" data-aos="fade-up">
-          <h1>Pricing</h1>
+          <Heading justifySelf="center" as="h2" fontSize={"3xl"}>
+            Pricing
+          </Heading>
           <p>There's something for everyone</p>
           <br />
           <div className="pricing-section">

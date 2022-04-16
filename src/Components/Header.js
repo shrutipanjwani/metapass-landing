@@ -77,7 +77,7 @@ const Header = () => {
               <GradientButton>
                 <a href="https://app.metapasshq.xyz/" target={"_blank"}>
                   {" "}
-                  Create a new Event
+                  Create a new Event →
                 </a>
               </GradientButton>
             </div>
@@ -100,11 +100,13 @@ const Header = () => {
         </div>
       </div>
 
-      <Box display="flex" flexDir="column" gap="4">
+      <Box display="flex" flexDir="column" gap="4" alignItems="center">
         <Text fontSize="3xl" textAlign="center" fontWeight="600">
-          Backed By
+          Backed by top chains
         </Text>
-
+        <Text color="#6b6f76" fontSize="sm">
+          You're in good hands. Promise.
+        </Text>
         <Box
           display="flex"
           flexDir="row"
