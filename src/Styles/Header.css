@@ -70,14 +70,14 @@ header .backed {
 header .backed .backed-flex {
   margin: 20px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  
 }
+
 .back-col{
   display: flex;
   flex-direction: column;
-
 }
 
 header .backed .backed-flex img {

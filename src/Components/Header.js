@@ -9,6 +9,8 @@ import superteamdao from "../Assets/superteamdao.jpeg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import { Box, Image, Text } from "@chakra-ui/react";
+
 const Header = () => {
   let app = useRef(null);
   let images = useRef(null);
@@ -97,23 +99,45 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="backed">
-        <h1>Backed By</h1>
-        <div className="backed-flex">
-          <div className="back-col">
-            <img src={polygon} alt="polygon" />
-            <span>&nbsp;Polygon</span>
-          </div>
-          <div className="back-col">
-            <img src={solana} alt="polygon" />
-            <span>&nbsp;Solana</span>
-          </div>
-          <div className="back-col">
-            <img src={superteamdao} alt="polygon" />
-            <span>&nbsp;SuperteamDao</span>
-          </div>
-        </div>
-      </div>
+
+      <Box display="flex" flexDir="column" gap="4">
+        <Text fontSize="3xl" textAlign="center" fontWeight="600">
+          Backed By
+        </Text>
+
+        <Box
+          display="flex"
+          flexDir="row"
+          gap="6"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Box display="flex" flexDir="row" gap="2" alignItems="center">
+            <Image src={polygon} alt="polygon" height="20" width="20" />
+            Polygon
+          </Box>
+          <Box display="flex" flexDir="row" gap="2" alignItems="center">
+            <Image
+              src={solana}
+              alt="polygon"
+              rounded="full"
+              height="20"
+              width="20"
+            />
+            Solana
+          </Box>
+          <Box display="flex" flexDir="row" gap="2" alignItems="center">
+            <Image
+              src={superteamdao}
+              alt="polygon"
+              rounded="full"
+              height="20"
+              width="20"
+            />
+            Superteam DAO
+          </Box>
+        </Box>
+      </Box>
     </header>
   );
 };
