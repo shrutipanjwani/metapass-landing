@@ -10,7 +10,12 @@ main {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
-
+.pricing-section{
+  display: flex;
+  justify-items: space-around;
+  align-items: center;
+  
+}
 .feature-image img {
   width: 90%;
 }
@@ -101,16 +106,27 @@ main {
   padding: 30px;
   margin-top: 20px;
   margin-bottom: 80px;
+  
 }
+
+
 
 .pricing .pricing-box h1 {
   text-align: center;
+  margin: 0px;
+  padding: 0px;
 }
-
+.price-flex .on-each-ticket{
+  font-size: x-small;
+  font-weight: 400;
+  font-style: normal;
+  color: #52585d;
+}
 .pricing .pricing-box .price-flex {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   margin-top: 0.5rem;
 }
 
@@ -128,8 +144,12 @@ main {
   margin: 50px auto;
 }
 
+
+
 .pricing .pricing-box ul li {
   margin-bottom: 10px;
+  font-size: small;
+  
 }
 
 .pricing .pricing-box button {

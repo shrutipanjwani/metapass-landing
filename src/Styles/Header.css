@@ -19,19 +19,30 @@ header .header-content {
   margin-bottom: 2rem;
 }
 
+
 header .header-content h1 {
   font-size: 3rem;
   line-height: 1.2;
   font-weight: 700;
   letter-spacing: -2px;
+
 }
+
+.subtext-head{
+  font-family: 'Poppins', sans-serif;
+  
+  font-size: 0.75rem;
+  
+}
+
 
 header .header-content h1 .hero-content-line {
   height: 58px;
   overflow: hidden;
+  font-family: 'Azonix';
 }
 
-header .header-content p {
+ .header-content p {
   color: var(--grey-color);
 }
 
@@ -61,10 +72,16 @@ header .backed .backed-flex {
   display: flex;
   justify-content: center;
   align-items: center;
+  
+}
+.back-col{
+  display: flex;
+  flex-direction: column;
+
 }
 
 header .backed .backed-flex img {
-  width: 4%;
+  width: 10%;
 }
 
 @media screen and (max-width: 1200px) {
