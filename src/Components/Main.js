@@ -9,6 +9,7 @@ import live from "../Assets/live.avif";
 import ticket from "../Assets/ticket1.png";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { Heading } from "@chakra-ui/react";
+import TwitterFeed from "./TwitterFeed";
 
 const Main = () => {
   return (
@@ -61,6 +62,7 @@ const Main = () => {
             </a>
           </div>
         </div>
+        <TwitterFeed />
         <div className="pricing" data-aos="fade-up">
           <Heading justifySelf="center" as="h2" fontSize={"3xl"}>
             Pricing
