@@ -30,6 +30,10 @@ main {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.feature-grid-content h1{
+  font-size: 2rem;
+  font-weight: bold;
+}
 
 .feature-grid-content a {
   text-decoration: none;

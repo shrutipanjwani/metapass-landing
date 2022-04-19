@@ -19,7 +19,7 @@ const Main = () => {
         </div>
         <div className="feature-grid-content">
           <h1>Token gate your events</h1>
-          <p>NFT Tickets to token gate your event in less than 1 minute</p>
+          <p>Create NFT Tickets in less than 1 minute</p>
           <a href="/">
             Learn more <FontAwesomeIcon icon={faArrowRight} />{" "}
           </a>
@@ -82,23 +82,45 @@ const Main = () => {
         </div>
         <div className="pricing" data-aos="fade-up">
           <h1>Pricing</h1>
-          <p>Completely free for creators</p>
+          <p>There's something for everyone</p>
           <br />
-          <div className="pricing-box">
-            <h1>Free</h1>
-            <div className="price-flex">
-              <span>$0/month</span>
+          <div className="pricing-section">
+            <div className="pricing-box">
+              <h1>Indie</h1>
+              <div className="price-flex">
+                <span className="on-each-ticket">on each ticket</span>
+                <br />
+                <span>0% convenience fee</span>
+              </div>
+              <ul>
+                <li>Make Unlimited events</li>
+                <li>No limit on tickets</li>
+                <li>Only for free events</li>
+              </ul>
+              <GradientButton>
+                <a href="https://app.metapasshq.xyz">
+                  Create an event&nbsp; <FontAwesomeIcon icon={faArrowRight} />{" "}
+                </a>
+              </GradientButton>
             </div>
-            <ul>
-              <li>Make Unlimited events</li>
-              <li>No limit on tickets</li>
-              <li>10% cut per ticket</li>
-            </ul>
-            <GradientButton>
-              <a href="https://app.metapasshq.xyz">
-                Create an event&nbsp; <FontAwesomeIcon icon={faArrowRight} />{" "}
-              </a>
-            </GradientButton>
+            <div className="pricing-box">
+              <h1>Studio</h1>
+              <div className="price-flex">
+                <span className="on-each-ticket">on each ticket</span>
+                <br />
+                <span>10% convenience fee</span>
+              </div>
+              <ul>
+                <li>Make Unlimited events</li>
+                <li>Unlimited tickets</li>
+                <li>Get paid for your tickets</li>
+              </ul>
+              <GradientButton>
+                <a href="https://app.metapasshq.xyz">
+                  Create an event&nbsp; <FontAwesomeIcon icon={faArrowRight} />{" "}
+                </a>
+              </GradientButton>
+            </div>
           </div>
         </div>
         <div className="community" data-aos="fade-up">
