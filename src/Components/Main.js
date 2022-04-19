@@ -1,20 +1,24 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../Styles/Main.css";
 import GradientButton from "./GradientButton";
 import Button from "./Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faQrcode } from "@fortawesome/free-solid-svg-icons";
-import token from "../Assets/token.avif";
-import live from "../Assets/live.avif";
+import token from "../Assets/gate.m4v";
+import live from "../Assets/surf.m4v";
 import ticket from "../Assets/ticket1.png";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 
 const Main = () => {
+	let videoRef = useRef(null);
+
 	return (
 		<main>
 			<div className="features-grid" data-aos="fade-up">
 				<div className="feature-image">
-					<img src={token} alt="token" />
+					<video
+						playsInline autoPlay muted loop width={600} src={token}
+					/>
 				</div>
 				<div className="feature-grid-content">
 					<h1>Token gate your events</h1>
@@ -37,7 +41,7 @@ const Main = () => {
 					</a>
 				</div>
 				<div className="feature-image">
-					<img src={live} alt="live" />
+					<video playsInline autoPlay muted loop width={600} src={live} alt="live" />
 				</div>
 			</div>
 			<div className="features-method" data-aos="fade-up">
