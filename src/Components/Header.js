@@ -4,8 +4,12 @@ import "../Styles/Header.css";
 import GradientButton from "./GradientButton";
 import headerVideo from "../Assets/FloatingCard_Animation_4.mp4";
 import polygon from "../Assets/polygon.png";
+import solana from "../Assets/solana.png";
+import superteamdao from "../Assets/superteamdao.jpeg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+import { Box, Image, Text } from "@chakra-ui/react";
 
 const Header = () => {
 	let app = useRef(null);
@@ -23,12 +27,7 @@ const Header = () => {
 
 		TweenMax.to(app, 0, { css: { visibility: "visible" } });
 
-		tl.from(
-			headerVideo,
-			1.2,
-			{ y: 1280, ease: Power3.easeOut },
-			"Start"
-		).from(
+		tl.from(headerVideo, 1.2, { y: 1280, ease: Power3.easeOut }, "Start").from(
 			headerVideo.firstElementChild,
 			2,
 			{ scale: 1.6, ease: Power3.easeOut },
@@ -47,12 +46,7 @@ const Header = () => {
 			"Start"
 		)
 			.from(contentP, 1, { y: 20, opacity: 0, ease: Power3.easeOut }, 1.4)
-			.from(
-				contentButton,
-				1,
-				{ y: 20, opacity: 0, ease: Power3.easeOut },
-				1.6
-			);
+			.from(contentButton, 1, { y: 20, opacity: 0, ease: Power3.easeOut }, 1.6);
 
 		AOS.init();
 		AOS.refresh();
@@ -62,15 +56,10 @@ const Header = () => {
 		<header data-aos="fade-up" ref={(el) => (app = el)}>
 			<div className="header-flex">
 				<div className="header-content">
-					<div
-						className="header-content-inner"
-						ref={(el) => (content = el)}
-					>
+					<div className="header-content-inner" ref={(el) => (content = el)}>
 						<h1>
 							<div className="hero-content-line">
-								<div className="hero-content-line-inner">
-									Tokenize your
-								</div>
+								<div className="hero-content-line-inner">Tokenize your</div>
 							</div>
 							<div className="hero-content-line">
 								<div className="hero-content-line-inner">
@@ -78,30 +67,24 @@ const Header = () => {
 								</div>
 							</div>
 						</h1>
-						<p>
-							Metapass allows you to create events on Polygon and
-							sell NFT tickets so you can token gate your event
-							and also server proof of attendance.
+						<p className="subtext-head" color="white">
+							Metapass allows you to create events on Polygon and sell NFT
+							tickets so you can token gate your event and also server proof of
+							attendance.
 						</p>
 						<br />
 						<div className="btn-row">
 							<GradientButton>
-								<a
-									href="https://app.metapasshq.xyz/"
-									target={"_blank"}
-								>
+								<a href="https://app.metapasshq.xyz/" target={"_blank"}>
 									{" "}
-									Create a new Event
+									Create a new Event →
 								</a>
 							</GradientButton>
 						</div>
 					</div>
 				</div>
 				<div className="header-image">
-					<div
-						className="header-image-inner"
-						ref={(el) => (images = el)}
-					>
+					<div className="header-image-inner" ref={(el) => (images = el)}>
 						<video
 							controls={false}
 							autoPlay
@@ -116,13 +99,47 @@ const Header = () => {
 					</div>
 				</div>
 			</div>
-			<div className="backed">
-				<h1>Backed By</h1>
-				<div className="backed-flex">
-					<img src={polygon} alt="polygon" />
-					<span>&nbsp;Polygon</span>
-				</div>
-			</div>
+
+			<Box display="flex" flexDir="column" gap="4" alignItems="center">
+				<Text fontSize="3xl" textAlign="center" fontWeight="600">
+					Backed by top chains
+				</Text>
+				<Text color="#6b6f76" fontSize="sm">
+					You're in good hands. Promise.
+				</Text>
+				<Box
+					display="flex"
+					flexDir="row"
+					gap="6"
+					justifyContent="center"
+					alignItems="center"
+				>
+					<Box display="flex" flexDir="row" gap="2" alignItems="center">
+						<Image src={polygon} alt="polygon" height="20" width="20" />
+						Polygon
+					</Box>
+					<Box display="flex" flexDir="row" gap="2" alignItems="center">
+						<Image
+							src={solana}
+							alt="polygon"
+							rounded="full"
+							height="20"
+							width="20"
+						/>
+						Solana
+					</Box>
+					<Box display="flex" flexDir="row" gap="2" alignItems="center">
+						<Image
+							src={superteamdao}
+							alt="polygon"
+							rounded="full"
+							height="20"
+							width="20"
+						/>
+						Superteam DAO
+					</Box>
+				</Box>
+			</Box>
 		</header>
 	);
 };

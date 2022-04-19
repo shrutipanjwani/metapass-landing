@@ -10,7 +10,6 @@ import ticket from "../Assets/ticket1.png";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 
 const Main = () => {
-	let videoRef = useRef(null);
 
 	return (
 		<main>

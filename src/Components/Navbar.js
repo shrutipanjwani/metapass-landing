@@ -6,57 +6,67 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Box, Flex } from "@chakra-ui/react";
 
 const MenuItems = [
-	{
-		title: "Join Community",
-		url: "https://discord.gg/CBQ5YNnFXx",
-		cName: "nav-link",
-	},
+  {
+    title: "Join Community",
+    url: "https://discord.gg/CBQ5YNnFXx",
+    cName: "nav-link",
+  },
 ];
 
 const Navbar = () => {
-	const [clicked, setClicked] = useState(false);
-	const handleClick = () => {
-		setClicked(!clicked);
-	};
+  const [clicked, setClicked] = useState(false);
+  const handleClick = () => {
+    setClicked(!clicked);
+  };
 
-	useEffect(() => {
-		AOS.init();
-		AOS.refresh();
-	});
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  });
 
-	return (
-		<nav className="NavbarItems" data-aos="fade-down">
-			<img className="navbar-logo" src={logo} alt="Logo" />
-			<div className="menu-icon" onClick={handleClick}>
-				{clicked ? (
-					<FontAwesomeIcon icon={faTimes} />
-				) : (
-					<FontAwesomeIcon icon={faBars} />
-				)}
-			</div>
-			<ul className={clicked ? "nav-links active" : "nav-links"}>
-				{MenuItems.map((item, index) => {
-					return (
-						<li key={index}>
-							<a className={item.cName} href={item.url}>
-								{item.title}
-							</a>
-						</li>
-					);
-				})}
-				<li>
-					<GradientButton>
-						<a href="https://app.metapasshq.xyz/" target={"_blank"}>
-							{" "}
-							Launch App
-						</a>
-					</GradientButton>
-				</li>
-			</ul>
-		</nav>
-	);
+  return (
+    <Flex
+      align="center"
+      justify="space-between"
+      w="full"
+      shadow="sm"
+      pb="2"
+      mt="-2"
+    >
+      <img className="navbar-logo" src={logo} alt="Logo" />
+      <Flex>
+        <div className="menu-icon" onClick={handleClick}>
+          {clicked ? (
+            <FontAwesomeIcon icon={faTimes} />
+          ) : (
+            <FontAwesomeIcon icon={faBars} />
+          )}
+        </div>
+        <ul className={clicked ? "nav-links active" : "nav-links"}>
+          {MenuItems.map((item, index) => {
+            return (
+              <li key={index}>
+                <a className={item.cName} href={item.url}>
+                  {item.title}
+                </a>
+              </li>
+            );
+          })}
+          <li>
+            <GradientButton>
+              <a href="https://app.metapasshq.xyz/" target={"_blank"}>
+                {" "}
+                Launch App
+              </a>
+            </GradientButton>
+          </li>
+        </ul>
+      </Flex>
+    </Flex>
+  );
 };
 
 export default Navbar;

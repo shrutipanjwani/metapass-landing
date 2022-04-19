@@ -3,7 +3,7 @@ button {
   cursor: pointer;
   padding: 5px 12px;
   letter-spacing: 0.5px;
-  border-radius: 8px;
+  border-radius: 999px;
   border: none;
   text-align: center;
   transition: 0.5s;
@@ -24,8 +24,9 @@ button {
 
 .gradient-button {
   color: var(--white-color);
-  background: linear-gradient(135deg, #87afff 0%, #ff5e86 100%);
+  background: #F54B94;
   padding: 0.5rem 1rem;
+  box-shadow: 0 10px 20px -10px #F54B94;
 }
 
 .gradient-button:hover {
@@ -36,8 +37,9 @@ button {
 }
 
 .button a {
-  text-decoration: none;
+ text-decoration: none;
   color: var(--white-color);
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,6 +49,7 @@ button {
   text-decoration: none;
   color: var(--white-color);
   display: flex;
+  font-weight: 700;
   justify-content: center;
   align-items: center;
 }

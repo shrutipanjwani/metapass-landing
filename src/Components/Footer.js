@@ -12,20 +12,6 @@ const Footer = () => {
 			</center>
 			<div className="footer-container">
 				<div className="footer-col">
-					<ul className="footer-socials">
-						<li>
-							<a href="https://twitter.com/metapassHQ">
-								<FontAwesomeIcon icon={faTwitter} />
-							</a>
-						</li>
-						<li>
-							<a href="https://discord.gg/CBQ5YNnFXx">
-								<FontAwesomeIcon icon={faDiscord} />
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div className="footer-col">
 					<ul className="footer-links">
 						<h3>Company</h3>
 						<li>
