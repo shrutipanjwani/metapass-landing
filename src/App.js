@@ -42,7 +42,7 @@ function App() {
       <Navbar />
       <Header />
       <Main />
-
+      <TwitterFeed />
       <Footer />
     </div>
   );

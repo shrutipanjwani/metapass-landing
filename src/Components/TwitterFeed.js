@@ -14,11 +14,18 @@ import {
 
 export default function TwitterFeed() {
   return (
-    <Flex wrap="wrap" justify="center" maxW="1000px" w="fit-content" mx="auto">
-      <Box mr="5" mb="5">
+    <Flex
+      wrap="wrap"
+      mt="20"
+      justify="center"
+      maxW="1000px"
+      w="fit-content"
+      mx="auto"
+    >
+      <Box mr={{ base: "2", md: "5" }} mb={{ base: "2", md: "5" }}>
         <TwitterTweetEmbed tweetId={"1494378905893220352"} />
       </Box>
-      <Box mr="5" mb="5">
+      <Box mr={{ base: "2", md: "5" }} mb={{ base: "2", md: "5" }}>
         <TwitterTweetEmbed tweetId={"1495081007489630208"} />
       </Box>
     </Flex>

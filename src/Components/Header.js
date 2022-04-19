@@ -110,31 +110,43 @@ const Header = () => {
         <Box
           display="flex"
           flexDir="row"
-          gap="16"
+          gap={{ base: "8", md: "16" }}
+          ml={{ base: "4", md: "0" }}
           justifyContent="center"
           alignItems="center"
         >
           <Box display="flex" flexDir="column" gap="2" alignItems="center">
-            <Image src={polygon} alt="polygon" height="20" width="20" />
+            <Image
+              src={polygon}
+              h="14"
+              w="14"
+              alt="polygon"
+              minH="14"
+              minW="14"
+            />
             Polygon
           </Box>
           <Box display="flex" flexDir="column" gap="2" alignItems="center">
             <Image
+              h="14"
+              w="14"
               src={solana}
               alt="polygon"
               rounded="full"
-              height="20"
-              width="20"
+              minH="14"
+              minW="14"
             />
             Solana
           </Box>
           <Box display="flex" flexDir="column" gap="2" alignItems="center">
             <Image
+              h="14"
+              w="14"
+              minH="14"
+              minW="14"
               src={superteamdao}
               alt="polygon"
               rounded="full"
-              height="20"
-              width="20"
             />
             Superteam DAO
           </Box>
