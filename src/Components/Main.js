@@ -4,111 +4,121 @@ import GradientButton from "./GradientButton";
 import Button from "./Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faQrcode } from "@fortawesome/free-solid-svg-icons";
+// import {} from "@fortawesome/fontawesome-svg-core"
 import token from "../Assets/gate.m4v";
 import live from "../Assets/surf.m4v";
 import ticket from "../Assets/ticket1.png";
-import { faDiscord } from "@fortawesome/free-brands-svg-icons";
+// import { ReactComponent as ChartIcon } from "./chart-svgrepo-com.svg";
 
 const Main = () => {
-
-	return (
-		<main>
-			<div className="features-grid" data-aos="fade-up">
-				<div className="feature-image">
-					<video
-						playsInline autoPlay muted loop width={600} src={token}
-					/>
-				</div>
-				<div className="feature-grid-content">
-					<h1>Token gate your events</h1>
-					<p>
-						NFT Tickets to token gate your event in less than 1
-						minute
-					</p>
-					<a href="/">
-						Learn more <FontAwesomeIcon icon={faArrowRight} />{" "}
-					</a>
-				</div>
-				<div className="feature-grid-content">
-					<h1>Live on Polygon Network</h1>
-					<p>
-						We've chosen to go live on Polygon chain as its fast and
-						inexpensive to create events
-					</p>
-					<a href="/">
-						Learn more <FontAwesomeIcon icon={faArrowRight} />{" "}
-					</a>
-				</div>
-				<div className="feature-image">
-					<video playsInline autoPlay muted loop width={600} src={live} alt="live" />
-				</div>
-			</div>
-			<div className="features-method" data-aos="fade-up">
-				<h1>Fast and easy ticket verification</h1>
-				<p>Built with security and easy-of-use in mind.</p>
-				<div className="methods-flex">
-					<div className="method-image">
-						<img src={ticket} alt="ticket" />
-					</div>
-					<div className="method-content">
-						<a href="/">
-							<div className="method-content-box">
-								<FontAwesomeIcon icon={faDiscord} />
-								<p>
-									Metapass Discord Bot for one click
-									verification
-								</p>
-							</div>
-						</a>
-						<br />
-						<a href="/">
-							<div className="method-content-box">
-								<FontAwesomeIcon icon={faQrcode} />
-								<p>One time QR code for IRL Events</p>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div className="pricing" data-aos="fade-up">
-					<h1>Pricing</h1>
-					<p>Completely free for creators</p>
-					<br />
-					<div className="pricing-box">
-						<h1>Free</h1>
-						<div className="price-flex">
-							<span>$0/month</span>
-						</div>
-						<ul>
-							<li>Make Unlimited events</li>
-							<li>No limit on tickets</li>
-							<li>10% cut per ticket</li>
-						</ul>
-						<GradientButton>
-							<a href="https://app.metapasshq.xyz">
-								Create an event&nbsp;{" "}
-								<FontAwesomeIcon icon={faArrowRight} />{" "}
-							</a>
-						</GradientButton>
-					</div>
-				</div>
-				<div className="community" data-aos="fade-up">
-					<h1>Be a part of our awesome community!</h1>
-					<ul className="socials">
-						<li>
-							<a href="/">
-								<Button>Twitter</Button>
-							</a>
-						</li>
-						<li>
-							<a href="/">
-								<Button>Discord</Button>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</main>
-	);
+  return (
+    <main>
+      <div className="features-grid" data-aos="fade-up">
+        <div className="feature-image">
+          <video playsInline autoPlay muted loop width={600} src={token} />
+        </div>
+        <div className="feature-grid-content">
+          <h1>Token gate your events</h1>
+          <p>NFT Tickets to token gate your event in less than 1 minute</p>
+          <a href="/">
+            Learn more <FontAwesomeIcon icon={faArrowRight} />{" "}
+          </a>
+        </div>
+        <div className="feature-grid-content">
+          <h1>Live on Polygon Network</h1>
+          <p>
+            We've chosen to go live on Polygon chain as its fast and inexpensive
+            to create events
+          </p>
+          <a href="/">
+            Learn more <FontAwesomeIcon icon={faArrowRight} />{" "}
+          </a>
+        </div>
+        <div className="feature-image">
+          <video
+            playsInline
+            autoPlay
+            muted
+            loop
+            width={600}
+            src={live}
+            alt="live"
+          />
+        </div>
+      </div>
+      <div className="features-method" data-aos="fade-up">
+        <h1>Fast and easy ticket verification</h1>
+        <p>Built with security and easy-of-use in mind.</p>
+        <div className="methods-flex">
+          <div className="method-image">
+            <img src={ticket} alt="ticket" />
+          </div>
+          <div className="method-content">
+            <a href="/">
+              <div className="method-content-box">
+                <svg
+                  fill="white"
+                  width="8%"
+                  height="5%"
+                  viewBox="0 0 24 24"
+                  radius="0px"
+                  strokeLinecap="square"
+                  xmlns="http://www.w3.org/2000/svg"
+                  enable-background="new 0 0 24 24"
+                >
+                  <path d="M19,2H5C3.3,2,2,3.3,2,5v14c0,1.7,1.3,3,3,3h14c1.7,0,3-1.3,3-3V5C22,3.3,20.7,2,19,2z M8,17c0,0.6-0.4,1-1,1s-1-0.4-1-1v-4c0-0.6,0.4-1,1-1s1,0.4,1,1V17z M13,17c0,0.6-0.4,1-1,1s-1-0.4-1-1V7c0-0.6,0.4-1,1-1s1,0.4,1,1V17z M18,17c0,0.6-0.4,1-1,1s-1-0.4-1-1v-6c0-0.6,0.4-1,1-1s1,0.4,1,1V17z" />
+                </svg>
+                <p>Metapass Dashboard to view event statistics</p>
+              </div>
+            </a>
+            <br />
+            <a href="/">
+              <div className="method-content-box">
+                <FontAwesomeIcon width="20px" height="20px" icon={faQrcode} />
+                <p>One time QR code for IRL Events</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div className="pricing" data-aos="fade-up">
+          <h1>Pricing</h1>
+          <p>Completely free for creators</p>
+          <br />
+          <div className="pricing-box">
+            <h1>Free</h1>
+            <div className="price-flex">
+              <span>$0/month</span>
+            </div>
+            <ul>
+              <li>Make Unlimited events</li>
+              <li>No limit on tickets</li>
+              <li>10% cut per ticket</li>
+            </ul>
+            <GradientButton>
+              <a href="https://app.metapasshq.xyz">
+                Create an event&nbsp; <FontAwesomeIcon icon={faArrowRight} />{" "}
+              </a>
+            </GradientButton>
+          </div>
+        </div>
+        <div className="community" data-aos="fade-up">
+          <h1>Be a part of our awesome community!</h1>
+          <ul className="socials">
+            <li>
+              <a href="/">
+                <Button>Twitter</Button>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <Button>Discord</Button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  );
 };
 
 export default Main;
