@@ -2,12 +2,15 @@ import React, { useRef } from "react";
 import "../Styles/Main.css";
 import GradientButton from "./GradientButton";
 import Button from "./Button";
+import { Heading } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faQrcode } from "@fortawesome/free-solid-svg-icons";
 // import {} from "@fortawesome/fontawesome-svg-core"
 import token from "../Assets/gate.m4v";
-import live from "../Assets/surf.m4v";
+import live from "../Assets/Surf2.mp4";
 import ticket from "../Assets/ticket1.png";
+import TwitterFeed from "./TwitterFeed";
+import { Flex } from "@chakra-ui/react";
 // import { ReactComponent as ChartIcon } from "./chart-svgrepo-com.svg";
 
 const Main = () => {
@@ -19,16 +22,19 @@ const Main = () => {
         </div>
         <div className="feature-grid-content">
           <h1>Token gate your events</h1>
-          <p>Create NFT Tickets in less than 1 minute</p>
+          <p>
+            Create NFT Tickets in less than 1 minute and token gate your events
+            with ease and prevent fake tickets with the power of NFTs.
+          </p>
           <a href="/">
             Learn more <FontAwesomeIcon icon={faArrowRight} />{" "}
           </a>
         </div>
         <div className="feature-grid-content">
-          <h1>Live on Polygon Network</h1>
+          <h1>Built for a Multichain Future</h1>
           <p>
-            We've chosen to go live on Polygon chain as its fast and inexpensive
-            to create events
+            We're live on Polygon with Solana integration coming soo, this means
+            that buy and selling tickets will be fast and inexpensive.
           </p>
           <a href="/">
             Learn more <FontAwesomeIcon icon={faArrowRight} />{" "}
@@ -80,6 +86,10 @@ const Main = () => {
             </a>
           </div>
         </div>
+        <div>
+          <div className="hear-com">Hear from our community</div>
+        </div>
+        <TwitterFeed />
         <div className="pricing" data-aos="fade-up">
           <h1>Pricing</h1>
           <p>There's something for everyone</p>
@@ -123,16 +133,17 @@ const Main = () => {
             </div>
           </div>
         </div>
+
         <div className="community" data-aos="fade-up">
           <h1>Be a part of our awesome community!</h1>
           <ul className="socials">
             <li>
-              <a href="/">
+              <a href="https://twitter.com/intent/follow?screen_name=metapasshq">
                 <Button>Twitter</Button>
               </a>
             </li>
             <li>
-              <a href="/">
+              <a href="https://discord.gg/7QDkBT39r8">
                 <Button>Discord</Button>
               </a>
             </li>

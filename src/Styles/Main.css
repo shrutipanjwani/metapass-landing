@@ -29,6 +29,14 @@ main {
 .feature-grid-content p {
   margin-top: 10px;
   margin-bottom: 10px;
+  
+}
+
+.feature-grid-content p{
+  color: rgba(0, 0, 0, 0.382);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 450;
+  font-size: 1.1rem;
 }
 .feature-grid-content h1{
   font-size: 2rem;
@@ -49,6 +57,10 @@ main {
 .features-method h1,
 .features-method p {
   text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+ 
 }
 
 .features-method .methods-flex {
@@ -126,6 +138,15 @@ main {
   margin-top: 5%;
   font-size: x-large;
   font-weight: bold;  
+}
+.hear-com{
+ display: flex;
+ justify-content: center;
+ font-size: xx-large;
+ font-weight: 400;
+  font-style: normal;
+  color: #52585d;
+  margin-top: 10%;
 }
 .price-flex .on-each-ticket{
   font-size: x-small;
