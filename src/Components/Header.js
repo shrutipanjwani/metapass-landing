@@ -100,7 +100,7 @@ const Header = () => {
         </div>
       </div>
 
-      <Box display="flex" flexDir="column" gap="4" align="center">
+      <Box display="flex" flexDir="column" mt="2" gap="4" align="center">
         <Text fontSize="3xl" textAlign="center" fontWeight="600">
           Backed by the best
         </Text>
@@ -124,7 +124,7 @@ const Header = () => {
               minH="14"
               minW="14"
             />
-            Polygon
+            Polygon Network
           </Box>
           <Box display="flex" flexDir="column" gap="2" alignItems="center">
             <Image
@@ -136,7 +136,7 @@ const Header = () => {
               minH="14"
               minW="14"
             />
-            Solana
+            Solana Foundation
           </Box>
           <Box display="flex" flexDir="column" gap="2" alignItems="center">
             <Image
