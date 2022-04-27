@@ -108,8 +108,12 @@ const Main = () => {
                 <li>Only for free events</li>
               </ul>
               <GradientButton>
-                <a href="https://app.metapasshq.xyz">
-                  Create an event&nbsp; <FontAwesomeIcon icon={faArrowRight} />{" "}
+                <a
+                  href="
+                mailto:gm@metapasshq.xyz
+                "
+                >
+                  Let's Talk&nbsp; <FontAwesomeIcon icon={faArrowRight} />{" "}
                 </a>
               </GradientButton>
             </div>
@@ -126,8 +130,8 @@ const Main = () => {
                 <li>Get paid for your tickets</li>
               </ul>
               <GradientButton>
-                <a href="https://app.metapasshq.xyz">
-                  Create an event&nbsp; <FontAwesomeIcon icon={faArrowRight} />{" "}
+                <a href="mailto:gm@metapasshq.xyz">
+                  Let's Talk&nbsp; <FontAwesomeIcon icon={faArrowRight} />{" "}
                 </a>
               </GradientButton>
             </div>
