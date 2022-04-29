@@ -72,6 +72,7 @@
 @media screen and (max-width: 1024px) {
   .NavbarItems {
     position: relative;
+    height: 100px;
   }
   .nav-links {
     display: flex;
@@ -80,14 +81,13 @@
     position: absolute;
     top: 60px;
     left: -100%;
-    opacity: 1;
     transition: all 0.5s ease;
   }
   .nav-links.active {
     left: 0;
-    opacity: 1;
     transition: all 0.5s ease;
-    z-index: 3;
+    top: 50px;
+    z-index: 10;
     background-color: var(--white-color);
     text-decoration: none;
   }

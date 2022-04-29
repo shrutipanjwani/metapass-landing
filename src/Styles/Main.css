@@ -10,11 +10,10 @@ main {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
-.pricing-section{
+.pricing-section {
   display: flex;
   justify-items: space-around;
   align-items: center;
-  
 }
 .feature-image img {
   width: 90%;
@@ -29,16 +28,15 @@ main {
 .feature-grid-content p {
   margin-top: 10px;
   margin-bottom: 10px;
-  
 }
 
-.feature-grid-content p{
+.feature-grid-content p {
   color: rgba(0, 0, 0, 0.382);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 450;
   font-size: 1.1rem;
 }
-.feature-grid-content h1{
+.feature-grid-content h1 {
   font-size: 2rem;
   font-weight: bold;
 }
@@ -57,10 +55,9 @@ main {
 .features-method h1,
 .features-method p {
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 1rem;
- 
 }
 
 .features-method .methods-flex {
@@ -103,10 +100,19 @@ main {
 
 .features-method .methods-flex .method-content .method-content-box svg {
   padding: 10px;
-  
   border-radius: 50%;
   background-color: #935cfe;
   color: var(--white-color);
+}
+
+.features-method .methods-flex .method-content .method-content-box .f-svg {
+  width: 8%;
+  height: 5%;
+}
+
+.features-method .methods-flex .method-content .method-content-box .f-icon {
+  width: 4%;
+  height: 3%;
 }
 
 .pricing {
@@ -121,10 +127,7 @@ main {
   padding: 30px;
   margin-top: 20px;
   margin-bottom: 80px;
-  
 }
-
-
 
 .pricing .pricing-box h1 {
   text-align: center;
@@ -132,23 +135,22 @@ main {
   padding: 0px;
   font-size: normal;
   font-weight: normal;
-  
 }
-.pricing h1{
+.pricing h1 {
   margin-top: 5%;
   font-size: x-large;
-  font-weight: bold;  
+  font-weight: bold;
 }
-.hear-com{
- display: flex;
- justify-content: center;
- font-size: xx-large;
- font-weight: 400;
+.hear-com {
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  font-weight: 400;
   font-style: normal;
   color: #52585d;
   margin-top: 10%;
 }
-.price-flex .on-each-ticket{
+.price-flex .on-each-ticket {
   font-size: x-small;
   font-weight: 400;
   font-style: normal;
@@ -176,12 +178,9 @@ main {
   margin: 50px auto;
 }
 
-
-
 .pricing .pricing-box ul li {
   margin-bottom: 10px;
   font-size: small;
-  
 }
 
 .pricing .pricing-box button {
@@ -213,7 +212,6 @@ main {
   margin-right: 20px;
 }
 
-
 @media screen and (max-width: 1024px) {
   .features-method .methods-flex .method-content {
     margin-top: 40px;
@@ -239,7 +237,7 @@ main {
     grid-template-rows: repeat(1, 1fr);
   }
   .features-method .methods-flex .method-content {
-    width: 70%;
+    width: 90%;
     margin-top: 10px;
   }
   .features-method .methods-flex {
@@ -252,6 +250,9 @@ main {
   }
   .pricing .pricing-box button {
     width: 100%;
+  }
+  .pricing-section {
+    flex-direction: column;
   }
 }
 
@@ -269,5 +270,25 @@ main {
   }
   .community h1 {
     font-size: 20px;
+  }
+  .features-method .methods-flex .method-content .method-content-box .f-svg {
+    width: 12%;
+    height: 5%;
+  }
+
+  .features-method .methods-flex .method-content .method-content-box .f-icon {
+    width: 5%;
+    height: 3%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .features-method .methods-flex .method-content .method-content-box .f-svg {
+    width: 15%;
+    height: 5%;
+  }
+  .features-method .methods-flex .method-content .method-content-box .f-icon {
+    width: 6%;
+    height: 4%;
   }
 }

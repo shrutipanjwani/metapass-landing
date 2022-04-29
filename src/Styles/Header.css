@@ -1,5 +1,7 @@
 header {
   width: 100%;
+  position: relative;
+  z-index: -1;
 }
 
 header .header-flex {
@@ -19,30 +21,26 @@ header .header-content {
   margin-bottom: 2rem;
 }
 
-
 header .header-content h1 {
   font-size: 3rem;
   line-height: 1.2;
   font-weight: 700;
   letter-spacing: -2px;
-
 }
 
-.subtext-head{
-  font-family: 'Poppins', sans-serif;
-  
+.subtext-head {
+  font-family: "Poppins", sans-serif;
+
   font-size: 0.9rem;
-  
 }
-
 
 header .header-content h1 .hero-content-line {
   height: 58px;
   overflow: hidden;
-  font-family: 'Azonix';
+  font-family: "Azonix";
 }
 
- .header-content p {
+.header-content p {
   color: var(--grey-color);
 }
 
@@ -50,7 +48,6 @@ header .header-image {
   position: relative;
   width: 50%;
 }
-
 
 .header-image-inner video {
   height: 500px;
@@ -75,7 +72,7 @@ header .backed .backed-flex {
   align-items: center;
 }
 
-.back-col{
+.back-col {
   display: flex;
   flex-direction: column;
 }
@@ -126,7 +123,7 @@ header .backed .backed-flex img {
   header .header-image-inner video {
     width: 300px;
     height: 300px;
-    margin: 0
+    margin: 0;
   }
   header .header-content {
     margin-top: 30px;

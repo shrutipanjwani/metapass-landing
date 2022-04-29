@@ -7,7 +7,7 @@ button {
   border: none;
   text-align: center;
   transition: 0.5s;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .button {
@@ -24,9 +24,11 @@ button {
 
 .gradient-button {
   color: var(--white-color);
-  background: #F54B94;
-  padding: 0.5rem 1rem;
-  box-shadow: 0 10px 20px -10px #F54B94;
+  background: #f54b94;
+  padding: 0.4rem 1rem;
+  font-size: 16px;
+  box-shadow: 0 10px 20px -10px #f54b94;
+  border-radius: 999px;
 }
 
 .gradient-button:hover {
@@ -37,9 +39,9 @@ button {
 }
 
 .button a {
- text-decoration: none;
+  text-decoration: none;
   color: var(--white-color);
-  
+
   display: flex;
   justify-content: center;
   align-items: center;

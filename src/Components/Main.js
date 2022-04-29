@@ -63,9 +63,8 @@ const Main = () => {
             <a href="/">
               <div className="method-content-box">
                 <svg
+                  className="f-svg"
                   fill="white"
-                  width="8%"
-                  height="5%"
                   viewBox="0 0 24 24"
                   radius="0px"
                   strokeLinecap="square"
@@ -80,7 +79,7 @@ const Main = () => {
             <br />
             <a href="/">
               <div className="method-content-box">
-                <FontAwesomeIcon width="20px" height="20px" icon={faQrcode} />
+                <FontAwesomeIcon className="f-icon" icon={faQrcode} />
                 <p>One time QR code for IRL Events</p>
               </div>
             </a>
