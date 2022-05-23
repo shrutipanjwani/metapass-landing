@@ -1,6 +1,7 @@
 button {
   z-index: 1;
-  cursor: pointer;
+  cursor:pointer;
+  pointer-events: all;
   padding: 5px 12px;
   letter-spacing: 0.5px;
   border-radius: 999px;

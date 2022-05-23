@@ -2,15 +2,17 @@ import React, { useRef } from "react";
 import "../Styles/Main.css";
 import GradientButton from "./GradientButton";
 import Button from "./Button";
-import { Heading } from "@chakra-ui/react";
+import { Box, Image, Link } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faQrcode } from "@fortawesome/free-solid-svg-icons";
 // import {} from "@fortawesome/fontawesome-svg-core"
 import token from "../Assets/gate.m4v";
+import chingari from "../Assets/chingari banner.svg";
 import live from "../Assets/Surf2.mp4";
 import ticket from "../Assets/ticket1.png";
 import TwitterFeed from "./TwitterFeed";
 import { Flex } from "@chakra-ui/react";
+import { IoIosCall } from "react-icons/io";
 // import { ReactComponent as ChartIcon } from "./chart-svgrepo-com.svg";
 
 const Main = () => {
@@ -86,6 +88,35 @@ const Main = () => {
           </div>
         </div>
         <div>
+          <div className="hear-com">Our Clients</div>
+          <Box
+            display="flex"
+            flexDir="row"
+            gap={{ base: "8", md: "16" }}
+            ml={{ base: "4", md: "0" }}
+            justifyContent="center"
+            alignItems="center"
+          >
+            <Box
+              display="flex"
+              flexDir="column"
+              mt="6"
+              gap="2"
+              alignItems="center"
+            >
+              <Image
+                src={chingari}
+                h="5%"
+                w="50%"
+                alt="polygon"
+                minH="14"
+                minW="14"
+              />
+              <Link href="https://gari.network">Chingari</Link>
+            </Box>
+          </Box>
+        </div>
+        <div>
           <div className="hear-com">Hear from our community</div>
         </div>
         <TwitterFeed />
@@ -95,7 +126,7 @@ const Main = () => {
           <br />
           <div className="pricing-section">
             <div className="pricing-box">
-              <h1>Indie</h1>
+              <h1 id="special-price">Indie</h1>
               <div className="price-flex">
                 <span className="on-each-ticket">on each ticket</span>
                 <br />
@@ -103,25 +134,37 @@ const Main = () => {
               </div>
               <ul>
                 <li>Make Unlimited events</li>
+                <hr />
                 <li>No limit on tickets</li>
+                <hr />
                 <li>Only for free events</li>
               </ul>
               <GradientButton>
                 <a
                   href="
-                mailto:gm@metapasshq.xyz
+               https://calendly.com/metapasshq
                 "
                 >
-                  Let's Talk&nbsp; <FontAwesomeIcon icon={faArrowRight} />{" "}
+                  <Flex align="center" justify="space-between">
+                    {" "}
+                    Book a Demo{" "}
+                    <Box ml="2">
+                      <IoIosCall />
+                    </Box>
+                  </Flex>
                 </a>
               </GradientButton>
             </div>
-            <div className="pricing-box">
-              <h1>Studio</h1>
+            {/* <div className="pricing-box">
+              <h1 id="special-price">Early Bird</h1>
+
               <div className="price-flex">
-                <span className="on-each-ticket">on each ticket</span>
+                <span className="on-each-ticket">on each ticket </span>
                 <br />
-                <span>10% convenience fee</span>
+                <span>
+                  <s>0% convenience fee</s>
+                </span>
+                Pay $1000 for 1 year of unrestricted use
               </div>
               <ul>
                 <li>Make Unlimited events</li>
@@ -129,8 +172,48 @@ const Main = () => {
                 <li>Get paid for your tickets</li>
               </ul>
               <GradientButton>
-                <a href="mailto:gm@metapasshq.xyz">
-                  Let's Talk&nbsp; <FontAwesomeIcon icon={faArrowRight} />{" "}
+                <a
+                  href="
+               https://calendly.com/metapasshq
+                "
+                >
+                  <Flex align="center" justify="space-between">
+                    {" "}
+                    Book a Demo{" "}
+                    <Box ml="2">
+                      <IoIosCall />
+                    </Box>
+                  </Flex>
+                </a>
+              </GradientButton>
+            </div> */}
+            <div className="pricing-box">
+              <h1 id="special-price">Studio</h1>
+              <div className="price-flex">
+                <span className="on-each-ticket">on each ticket</span>
+                <br />
+                <span>10% convenience fee</span>
+              </div>
+              <ul>
+                <li>Make Unlimited events</li>
+                <hr />
+                <li>No limit on tickets</li>
+                <hr />
+                <li>Sell paid tickets</li>
+              </ul>
+              <GradientButton>
+                <a
+                  href="
+               https://calendly.com/metapasshq
+                "
+                >
+                  <Flex align="center" justify="space-between">
+                    {" "}
+                    Book a Demo{" "}
+                    <Box ml="2">
+                      <IoIosCall />
+                    </Box>
+                  </Flex>
                 </a>
               </GradientButton>
             </div>

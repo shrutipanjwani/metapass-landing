@@ -84,7 +84,7 @@ export default function TwitterFeed() {
           tweetId={"1483293647764598785"}
         />
       </Box>
-      <Box mr={{ base: "2", md: "5" }} mb={{ base: "2", md: "5" }}>
+      {/* <Box mr={{ base: "2", md: "5" }} mb={{ base: "2", md: "5" }}>
         <TwitterTweetEmbed
           options={{
             conversation: "none",
@@ -107,7 +107,7 @@ export default function TwitterFeed() {
           }}
           tweetId={"1506703549740175362"}
         />
-      </Box>
+      </Box> */}
     </Flex>
   );
 }

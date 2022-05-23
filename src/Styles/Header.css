@@ -38,6 +38,7 @@ header .header-content h1 .hero-content-line {
   height: 58px;
   overflow: hidden;
   font-family: "Azonix";
+  /* margin-top: -1.3rem; */
 }
 
 .header-content p {
@@ -136,14 +137,16 @@ header .backed .backed-flex img {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 430px) {
   header .header-content h1 {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
   header .header-content h1 .hero-content-line {
-    height: 44px;
+    height: 68px;
+    margin-top: -1rem;
   }
   header .backed {
     margin-top: 10%;
+
   }
 }

@@ -6,9 +6,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Button, Flex, useDisclosure } from "@chakra-ui/react";
+import HowToModal from "./Promo";
 
 const MenuItems = [
+  {
+    title: "What is Metapass?",
+    url: "",
+  },
   {
     title: "Join Community",
     url: "https://discord.gg/CBQ5YNnFXx",
@@ -23,6 +28,7 @@ const MenuItems = [
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
+  const { isOpen, onClose, onOpen } = useDisclosure();
   const handleClick = () => {
     setClicked(!clicked);
   };
@@ -53,15 +59,27 @@ const Navbar = () => {
           </div>
           <ul className={clicked ? "nav-links active" : "nav-links"}>
             {MenuItems.map((item, index) => {
-              return (
+              return index !== 0 ? (
                 <li key={index}>
                   <a className={item.cName} href={item.url} target={"_blank"}>
                     {item.title}
                   </a>
                 </li>
+              ) : (
+                <Button
+                  fontStyle="normal"
+                  fontWeight="normal"
+                  fontFamily="Poppins, sans-serif;"
+                  letterSpacing="0px"
+                  variant="unstyled"
+                  onClick={onOpen}
+                >
+                  {item.title}
+                </Button>
               );
             })}
           </ul>
+          <HowToModal isOpen={isOpen} onClose={onClose} />
         </Flex>
       </nav>
     </Flex>

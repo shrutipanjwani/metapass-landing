@@ -10,6 +10,16 @@ main {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
+.pricing-section hr {
+  border: 0;
+  clear:both;
+  display:block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 60%;               
+  background-color: rgba(128, 128, 128, 0.134);
+  height: 1px;
+}
 .pricing-section {
   display: flex;
   justify-items: space-around;
@@ -123,18 +133,35 @@ main {
 .pricing .pricing-box {
   width: 30%;
   margin: auto;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(149, 157, 165, 0.25) 0px 1px 24px;
   padding: 30px;
   margin-top: 20px;
   margin-bottom: 80px;
+  border-radius: 20px;
 }
+ /* ul{
+  
+  list-style:disc;
+  list-style-position: outside;
 
+}
+li{
+  display: list-item;
+} */
 .pricing .pricing-box h1 {
   text-align: center;
   margin: 0px;
   padding: 0px;
-  font-size: normal;
+  font-size: larger;
   font-weight: normal;
+}
+#special-price{
+  font-size: 2.2rem;
+  font-weight: 500;
+  background-image: linear-gradient(135deg, #6699ff 0%, #ff3366 100%);
+  font-family: "Poppins", sans-serif;
+  background-clip: text;
+  color: transparent;
 }
 .pricing h1 {
   margin-top: 5%;
@@ -173,15 +200,18 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items:center;
   width: 60%;
   margin: 50px auto;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
-.pricing .pricing-box ul li {
+/* .pricing .pricing-box ul li {
   margin-bottom: 10px;
-  font-size: small;
-}
+  font-size:medium;
+  font-weight: 400;
+} */
 
 .pricing .pricing-box button {
   width: 70%;

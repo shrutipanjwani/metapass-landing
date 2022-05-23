@@ -2,8 +2,10 @@ import React, { useEffect, useRef } from "react";
 import { TweenMax, TimelineLite, Power3 } from "gsap";
 import "../Styles/Header.css";
 import GradientButton from "./GradientButton";
+import { Flex } from "@chakra-ui/react";
 import headerVideo from "../Assets/FloatingCard_Animation_4.mp4";
 import polygon from "../Assets/polygon.png";
+import { IoIosCall } from "react-icons/io";
 import solana from "../Assets/solana.png";
 import superteamdao from "../Assets/superteamdao.jpeg";
 import AOS from "aos";
@@ -73,11 +75,17 @@ const Header = () => {
               attendance.
             </p>
             <br />
-            <div className="btn-row">
+            <div>
               <GradientButton>
-                <a href="https://app.metapasshq.xyz/" target={"_blank"}>
+                <a href="https://calendly.com/metapass" target={"_blank"}>
                   {" "}
-                  Create a new Event →
+                  <Flex align="center" justify="space-between">
+                    {" "}
+                    Book a Demo{" "}
+                    <Box ml="2">
+                      <IoIosCall />
+                    </Box>
+                  </Flex>
                 </a>
               </GradientButton>
             </div>
