@@ -128,16 +128,20 @@ const Main = () => {
             <div className="pricing-box">
               <h1 id="special-price">Indie</h1>
               <div className="price-flex">
-                <span className="on-each-ticket">on each ticket</span>
+                {/* <span className="on-each-ticket">on each ticket</span> */}
                 <br />
-                <span>0% convenience fee</span>
+                <span>Zero Fees</span>
               </div>
               <ul>
                 <li>Make Unlimited events</li>
                 <hr />
-                <li>No limit on tickets</li>
+                <li>Upto 100 Tickets</li>
                 <hr />
-                <li>Only for free events</li>
+                <li>Online {"&"} IRL events</li>
+                <hr />
+                <li>Discord {"&"} Huddle Integration</li>
+                <hr />
+                <li>Custom Ticket Template</li>
               </ul>
               <GradientButton>
                 <a
@@ -190,17 +194,22 @@ const Main = () => {
             <div className="pricing-box">
               <h1 id="special-price">Studio</h1>
               <div className="price-flex">
-                <span className="on-each-ticket">on each ticket</span>
                 <br />
-                <span>10% convenience fee</span>
+                <span>Book a call to get a quote</span>
               </div>
+
               <ul>
+                <li>Everything in Indie</li>
+                <hr />
                 <li>Make Unlimited events</li>
                 <hr />
                 <li>No limit on tickets</li>
                 <hr />
-                <li>Sell paid tickets</li>
+                <li>Complete Event Management Suite</li>
+                <hr />
+                <li>Priority customer service</li>
               </ul>
+
               <GradientButton>
                 <a
                   href="
