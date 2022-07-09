@@ -1,11 +1,17 @@
+import { useEffect } from 'react'
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import Header from "./Components/Header";
 import Main from "./Components/Main";
 import Footer from "./Components/Footer";
 import TwitterFeed from "./Components/TwitterFeed";
+import splitbee from '@splitbee/web';
+
 
 function App() {
+  useEffect(() => {
+    splitbee.init("Land")
+  })
   return (
     <div className="App">
       <head>
