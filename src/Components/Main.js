@@ -159,38 +159,7 @@ const Main = () => {
                 </a>
               </GradientButton>
             </div>
-            {/* <div className="pricing-box">
-              <h1 id="special-price">Early Bird</h1>
 
-              <div className="price-flex">
-                <span className="on-each-ticket">on each ticket </span>
-                <br />
-                <span>
-                  <s>0% convenience fee</s>
-                </span>
-                Pay $1000 for 1 year of unrestricted use
-              </div>
-              <ul>
-                <li>Make Unlimited events</li>
-                <li>Unlimited tickets</li>
-                <li>Get paid for your tickets</li>
-              </ul>
-              <GradientButton>
-                <a
-                  href="
-               https://calendly.com/metapasshq
-                "
-                >
-                  <Flex align="center" justify="space-between">
-                    {" "}
-                    Book a Demo{" "}
-                    <Box ml="2">
-                      <IoIosCall />
-                    </Box>
-                  </Flex>
-                </a>
-              </GradientButton>
-            </div> */}
             <div className="pricing-box">
               <h1 id="special-price">Studio</h1>
               <div className="price-flex">
