@@ -1,10 +1,15 @@
 import React from "react";
 import "../Styles/Button.css";
 
-const GradientButton = ({ children }) => {
+const GradientButton = ({ children, href }) => {
   return (
     <>
-      <button className="gradient-button">{children}</button>
+      <button
+        onClick={() => window.open(href, "_blank")}
+        className="gradient-button"
+      >
+        {children}
+      </button>
     </>
   );
 };

@@ -7,14 +7,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faQrcode } from "@fortawesome/free-solid-svg-icons";
 // import {} from "@fortawesome/fontawesome-svg-core"
 import token from "../Assets/gate.m4v";
-import chingari from "../Assets/chingari banner.svg";
+import chingari from "../Assets/chingari.svg";
+import huddle01 from "../Assets/huddle01.svg";
+import ftxsuperteam from "../Assets/ftxsuperteam.svg";
+import phnix from "../Assets/phnix.jpg";
 import live from "../Assets/Surf2.mp4";
 import ticket from "../Assets/ticket1.png";
 import TwitterFeed from "./TwitterFeed";
 import { Flex } from "@chakra-ui/react";
 import { IoIosCall } from "react-icons/io";
+import web3bharat from "../Assets/web3bharat.jpg";
 // import { ReactComponent as ChartIcon } from "./chart-svgrepo-com.svg";
-
+import superteamdao from "../Assets/superteamdao.jpeg";
 const Main = () => {
   return (
     <main>
@@ -35,8 +39,8 @@ const Main = () => {
         <div className="feature-grid-content">
           <h1>Built for a Multichain Future</h1>
           <p>
-            We're live on Polygon with Solana integration coming soo, this means
-            that buy and selling tickets will be fast and inexpensive.
+            We're live on Polygon with Solana integration coming soon, this
+            means that buy and selling tickets will be fast and inexpensive.
           </p>
           <a href="/">
             Learn more <FontAwesomeIcon icon={faArrowRight} />{" "}
@@ -91,11 +95,11 @@ const Main = () => {
           <div className="hear-com">Our Clients</div>
           <Box
             display="flex"
-            flexDir="row"
+            flexDir={["column", "column", "row", "row"]}
             gap={{ base: "8", md: "16" }}
             ml={{ base: "4", md: "0" }}
             justifyContent="center"
-            alignItems="center"
+            alignContent="center"
           >
             <Box
               display="flex"
@@ -106,15 +110,118 @@ const Main = () => {
             >
               <Image
                 src={chingari}
+                h="100%"
+                w="100%"
+                alt="polygon"
+                // minH="14"
+                // minW="14"
+              />
+              <Link href="https://gari.network">Chingari</Link>
+            </Box>
+            <Box
+              display="flex"
+              flexDir="column"
+              mt="6"
+              ml="2"
+              gap="2"
+              alignItems="center"
+            >
+              <Image
+                src={huddle01}
                 h="5%"
-                w="50%"
+                w="100%"
                 alt="polygon"
                 minH="14"
                 minW="14"
               />
-              <Link href="https://gari.network">Chingari</Link>
+              <Link href="https://huddle01.com">Huddle01</Link>
+            </Box>
+            <Box
+              display="flex"
+              flexDir="column"
+              mt="6"
+              gap="2"
+              alignItems="center"
+            >
+              <Image
+                src={ftxsuperteam}
+                h="100%"
+                w="100%"
+                alt="ftxsuperteam"
+                // minH="14"
+                // minW="14"
+              />
+              <Link href="https://ftxsuperteam.com">FTX Superteam</Link>
             </Box>
           </Box>
+          <Flex
+            justifyContent="center"
+            flexDir={["column", "column", "row", "row"]}
+            gap="16"
+          >
+            <Box
+              display="flex"
+              flexDir="column"
+              mt="6"
+              gap="2"
+              alignItems="center"
+            >
+              <Image
+                src={superteamdao}
+                // h="80%"
+                borderRadius="full"
+                // w="30%"
+                h="24"
+                alt="SuperteamDAO"
+                // minH="14"
+                // minW="14"
+              />
+              <Link href="https://superteam.fun">SuperteamDAO</Link>
+            </Box>
+            <Box
+              display="flex"
+              flexDir="column"
+              mt="6"
+              gap="2"
+              alignItems="center"
+            >
+              <Image
+                src={phnix}
+                // h="75%"
+                h="24"
+                borderRadius="full"
+                // w="50%"
+                alt="ThePhoenixGuild"
+                // minH="14"
+                // minW="14"
+              />
+              <Link href="https://mobile.twitter.com/phoenixguildhq">
+                ThePhoenixGuild
+              </Link>
+            </Box>
+
+            <Box
+              display="flex"
+              flexDir="column"
+              mt="6"
+              gap="2"
+              alignItems="center"
+            >
+              <Image
+                src={web3bharat}
+                // h="75%"
+                h="24"
+                borderRadius="full"
+                // w="30%"
+                alt="Web3 Bharat"
+                // minH="14"
+                // minW="14"
+              />
+              <Link href="https://mobile.twitter.com/web3bharat">
+                Web3 Bharat
+              </Link>
+            </Box>
+          </Flex>
         </div>
         <div>
           <div className="hear-com">Hear from our community</div>
@@ -142,6 +249,8 @@ const Main = () => {
                 <li>Discord {"&"} Huddle Integration</li>
                 <hr />
                 <li>Custom Ticket Template</li>
+                <hr />
+                <li>Gasless Mints</li>
               </ul>
               <GradientButton>
                 <a
@@ -164,7 +273,7 @@ const Main = () => {
               <h1 id="special-price">Studio</h1>
               <div className="price-flex">
                 <br />
-                <span>Book a call to get a quote</span>
+                <span>Starting at $12 per month</span>
               </div>
 
               <ul>
@@ -174,9 +283,11 @@ const Main = () => {
                 <hr />
                 <li>No limit on tickets</li>
                 <hr />
-                <li>Complete Event Management Suite</li>
+                <li>Event Management Dashboard</li>
                 <hr />
                 <li>Priority customer service</li>
+                <hr />
+                <li>Custom subdomain</li>
               </ul>
 
               <GradientButton>

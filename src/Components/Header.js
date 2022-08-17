@@ -5,7 +5,7 @@ import GradientButton from "./GradientButton";
 import { Flex } from "@chakra-ui/react";
 import headerVideo from "../Assets/FloatingCard_Animation_4.mp4";
 import polygon from "../Assets/polygon.png";
-import { IoIosCall } from "react-icons/io";
+import { IoTicket } from "react-icons/io5";
 import solana from "../Assets/solana.png";
 import superteamdao from "../Assets/superteamdao.jpeg";
 import AOS from "aos";
@@ -70,20 +70,21 @@ const Header = () => {
               </div>
             </h1>
             <p className="subtext-head" color="white">
-              Metapass allows you to create events on Polygon and sell NFT
-              tickets so you can token gate your event and also server proof of
-              attendance.
+              Metapass allows you to create events on Polygon and Solana and
+              sell NFT tickets so you can token gate your event and also serve
+              proof of attendance.
             </p>
             <br />
             <div>
-              <GradientButton>
-                <a href="https://calendly.com/metapass" target={"_blank"}>
+              <GradientButton href="https://app.metapasshq.xyz">
+                <a href="https://app.metapasshq.xyz" target={"_blank"}>
                   {" "}
                   <Flex align="center" justify="space-between">
                     {" "}
-                    Book a Demo{" "}
-                    <Box ml="2">
-                      <IoIosCall />
+                    Create an event{" "}
+                    <Box ml="2" fontSize="xl">
+                      {/* <IoTicket size="20" /> */}
+                      {"✨"}
                     </Box>
                   </Flex>
                 </a>
