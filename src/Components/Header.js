@@ -76,7 +76,7 @@ const Header = () => {
             </p>
             <br />
             <div>
-              <GradientButton href="https://app.metapasshq.xyz">
+              <GradientButton>
                 <a href="https://app.metapasshq.xyz" target={"_blank"}>
                   {" "}
                   <Flex align="center" justify="space-between">
