@@ -8,6 +8,7 @@ import polygon from "../Assets/polygon.png";
 import { IoTicket } from "react-icons/io5";
 import solana from "../Assets/solana.png";
 import superteamdao from "../Assets/superteamdao.jpeg";
+import buildspace from "../Assets/buildspace.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -129,7 +130,7 @@ const Header = () => {
               src={polygon}
               h="14"
               w="14"
-              alt="polygon"
+              alt="Polygon"
               minH="14"
               minW="14"
             />
@@ -140,7 +141,7 @@ const Header = () => {
               h="14"
               w="14"
               src={solana}
-              alt="polygon"
+              alt="Solana"
               rounded="full"
               minH="14"
               minW="14"
@@ -154,10 +155,22 @@ const Header = () => {
               minH="14"
               minW="14"
               src={superteamdao}
-              alt="polygon"
+              alt="SuperteamDAO"
               rounded="full"
             />
             Superteam DAO
+          </Box>
+          <Box display="flex" flexDir="column" gap="2" alignItems="center">
+            <Image
+              h="14"
+              w="14"
+              minH="14"
+              minW="14"
+              src={buildspace}
+              alt="Buildspace"
+              rounded="full"
+            />
+            Buildspace
           </Box>
         </Box>
       </Box>
