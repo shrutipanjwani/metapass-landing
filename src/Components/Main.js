@@ -40,7 +40,7 @@ const Main = () => {
           <h1>Built for a Multichain Future</h1>
           <p>
             We're live on Polygon and Solana, this means that buy and selling
-            tickets will be fast and inexpensive.
+            tickets is be fast and inexpensive.
           </p>
           <a href="/">
             Learn more <FontAwesomeIcon icon={faArrowRight} />{" "}
