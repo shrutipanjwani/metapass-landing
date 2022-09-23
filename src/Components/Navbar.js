@@ -12,6 +12,10 @@ import HowToModal from "./Promo";
 
 const MenuItems = [
   {
+    title: "We're Hiring!",
+    url: "https://superteam.fun/missions/full-stack-dev-for-an-nft-ticketing-platform-metapass",
+  },
+  {
     title: "How it works?",
     url: "https://www.loom.com/share/44b5ece6c21843fca8dff9a6d0b32a72",
   },
@@ -60,7 +64,7 @@ const Navbar = () => {
           </div>
           <ul className={clicked ? "nav-links active" : "nav-links"}>
             {MenuItems.map((item, index) => {
-              return index !== 2 ? (
+              return index !== 3 ? (
                 <li key={index}>
                   <a className={item.cName} href={item.url} target={"_blank"}>
                     {item.title}

@@ -22,7 +22,7 @@
 .nav-links {
   display: grid;
   grid-template-columns: repeat(5, auto);
-  gap: 10px;
+  gap: 30px;
   list-style: none;
   text-align: center;
   width: 75vw;
@@ -44,6 +44,7 @@
 
 .nav-links li {
   position: relative;
+
 }
 
 .nav-link::before {
