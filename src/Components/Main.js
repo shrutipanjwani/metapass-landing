@@ -143,14 +143,7 @@ const Main = () => {
               gap="2"
               alignItems="center"
             >
-              <Image
-                src={ftxsuperteam}
-                h="100%"
-                w="100%"
-                alt="ftxsuperteam"
-                // minH="14"
-                // minW="14"
-              />
+              <Image src={ftxsuperteam} h="100%" w="100%" alt="ftxsuperteam" />
               <Link href="https://ftxsuperteam.com">FTX Superteam</Link>
             </Box>
           </Box>
@@ -220,6 +213,27 @@ const Main = () => {
               <Link href="https://mobile.twitter.com/web3bharat">
                 Web3 Bharat
               </Link>
+            </Box>
+            <Box
+              display="flex"
+              flexDir="column"
+              // mt="2"
+              // gap="2"
+              // maxW="10%"
+              // border="1px solid #000"
+              // borderColor="gray.200"
+              // borderRadius="full"
+              alignItems="center"
+            >
+              <Image
+                src={
+                  "https://res.cloudinary.com/dev-connect/image/upload/v1664212565/IndiGG_logo_lkomxx.jpg"
+                }
+                borderRadius="full"
+                h="8rem"
+                alt="Indigg"
+              />
+              <Link href="https://indi.gg">IndiGG DAO</Link>
             </Box>
           </Flex>
         </div>
