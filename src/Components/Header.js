@@ -126,7 +126,7 @@ const Header = () => {
         </Text>
         <Box display="flex" flexDir="column">
           <Flex
-            gap={{ base: "8", md: "16" }}
+            gap={{ base: "12", md: "20" }}
             ml={{ base: "4", md: "0" }}
             justifyContent="center"
             alignItems="center"
@@ -140,7 +140,7 @@ const Header = () => {
                 minH="14"
                 minW="14"
               />
-              Polygon Network
+              {/* Polygon Network */}
             </Box>
             <Box display="flex" flexDir="column" gap="2" alignItems="center">
               <Image
@@ -152,7 +152,7 @@ const Header = () => {
                 minH="14"
                 minW="14"
               />
-              Solana Foundation
+              {/* Solana Foundation */}
             </Box>
             <Box display="flex" flexDir="column" gap="2" alignItems="center">
               <Image
@@ -164,14 +164,15 @@ const Header = () => {
                 alt="SuperteamDAO"
                 rounded="full"
               />
-              Superteam DAO
+              {/* Superteam DAO */}
             </Box>
           </Flex>
           <Flex
             align="center"
+            flexDir={{ base: "column", md: "row" }}
             gap={{ base: "8", md: "16" }}
             ml={{ base: "4", md: "0" }}
-            mt="20"
+            mt="8"
             justifyContent="center"
             alignContent="center"
           >
