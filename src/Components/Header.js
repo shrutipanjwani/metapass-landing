@@ -110,68 +110,100 @@ const Header = () => {
         </div>
       </div>
 
-      <Box display="flex" flexDir="column" mt="2" gap="4" align="center">
+      <Box
+        display="flex"
+        flexDir="column"
+        mt="2"
+        gap="4"
+        align="center"
+        mb="120px"
+      >
         <Text fontSize="3xl" textAlign="center" fontWeight="600">
           Backed by the best
         </Text>
         <Text color="#6b6f76" fontSize="sm">
           You're in good hands. Promise.
         </Text>
-        <Box
-          display="flex"
-          flexDir="row"
-          gap={{ base: "8", md: "16" }}
-          ml={{ base: "4", md: "0" }}
-          justifyContent="center"
-          alignItems="center"
-        >
-          <Box display="flex" flexDir="column" gap="2" alignItems="center">
-            <Image
-              src={polygon}
-              h="14"
-              w="14"
-              alt="Polygon"
-              minH="14"
-              minW="14"
-            />
-            Polygon Network
-          </Box>
-          <Box display="flex" flexDir="column" gap="2" alignItems="center">
-            <Image
-              h="14"
-              w="14"
-              src={solana}
-              alt="Solana"
-              rounded="full"
-              minH="14"
-              minW="14"
-            />
-            Solana Foundation
-          </Box>
-          <Box display="flex" flexDir="column" gap="2" alignItems="center">
-            <Image
-              h="14"
-              w="14"
-              minH="14"
-              minW="14"
-              src={superteamdao}
-              alt="SuperteamDAO"
-              rounded="full"
-            />
-            Superteam DAO
-          </Box>
-          <Box display="flex" flexDir="column" gap="2" alignItems="center">
-            <Image
-              h="14"
-              w="14"
-              minH="14"
-              minW="14"
-              src={buildspace}
-              alt="Buildspace"
-              rounded="full"
-            />
-            Buildspace
-          </Box>
+        <Box display="flex" flexDir="column">
+          <Flex
+            gap={{ base: "8", md: "16" }}
+            ml={{ base: "4", md: "0" }}
+            justifyContent="center"
+            alignItems="center"
+          >
+            <Box display="flex" flexDir="column" gap="2" alignItems="center">
+              <Image
+                src={polygon}
+                h="14"
+                w="14"
+                alt="Polygon"
+                minH="14"
+                minW="14"
+              />
+              Polygon Network
+            </Box>
+            <Box display="flex" flexDir="column" gap="2" alignItems="center">
+              <Image
+                h="14"
+                w="14"
+                src={solana}
+                alt="Solana"
+                rounded="full"
+                minH="14"
+                minW="14"
+              />
+              Solana Foundation
+            </Box>
+            <Box display="flex" flexDir="column" gap="2" alignItems="center">
+              <Image
+                h="14"
+                w="14"
+                minH="14"
+                minW="14"
+                src={superteamdao}
+                alt="SuperteamDAO"
+                rounded="full"
+              />
+              Superteam DAO
+            </Box>
+          </Flex>
+          <Flex
+            align="center"
+            gap={{ base: "8", md: "16" }}
+            ml={{ base: "4", md: "0" }}
+            mt="20"
+            justifyContent="center"
+            alignContent="center"
+          >
+            <Box display="flex" flexDir="column" gap="2" alignItems="center">
+              <Image
+                h="20"
+                // w="12"
+                minH="12"
+                // minW="12"
+                src={
+                  "https://res.cloudinary.com/dev-connect/image/upload/c_crop,h_644,w_2130/v1666186301/img/buildspace_logo_elsidg.png"
+                }
+                alt="Buildspace"
+                // rounded="full"
+              />
+              {/* Buildspace */}
+            </Box>
+            <Box display="flex" flexDir="column" gap="2" alignItems="center">
+              <Image
+                h="12"
+                // w="12"
+                minH="12"
+                // minW="12"
+                src={
+                  "https://github.com/devfolioco/brand-assets/blob/main/Logo%20+%20Text%20-%20Colored/Devfolio%20-%20Normal.png?raw=true"
+                }
+                alt="Devfolio"
+                // rounded="full"
+              />
+              {/* Devfolio.co */}
+            </Box>
+          </Flex>
         </Box>
       </Box>
     </header>
