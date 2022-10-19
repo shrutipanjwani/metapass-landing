@@ -82,7 +82,7 @@ const Header = () => {
                   {" "}
                   <Flex align="center" justify="space-between">
                     {" "}
-                    Create an event{" "}
+                    Get your pass{" "}
                     <Box ml="2" fontSize="xl">
                       {/* <IoTicket size="20" /> */}
                       {"✨"}
