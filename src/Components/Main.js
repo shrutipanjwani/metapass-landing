@@ -39,8 +39,8 @@ const Main = () => {
         <div className="feature-grid-content">
           <h1>Built for a Multichain Future</h1>
           <p>
-            We're live on Polygon and Solana, this means that buy and selling
-            tickets is be fast and inexpensive.
+            We're live on Polygon and Solana, this means that buying and selling
+            tickets is fast and inexpensive.
           </p>
           <a href="/">
             Learn more <FontAwesomeIcon icon={faArrowRight} />{" "}
