@@ -4,9 +4,9 @@ import "../Styles/Header.css";
 import GradientButton from "./GradientButton";
 import { Flex } from "@chakra-ui/react";
 import headerVideo from "../Assets/FloatingCard_Animation_4.mp4";
-import polygon from "../Assets/polygon.png";
+import polygon from "../Assets/polygon.svg";
 import { IoTicket } from "react-icons/io5";
-import solana from "../Assets/solana.png";
+import solana from "../Assets/solana.svg";
 import superteamdao from "../Assets/superteamdao.jpeg";
 import buildspace from "../Assets/buildspace.jpg";
 import AOS from "aos";
@@ -126,55 +126,12 @@ const Header = () => {
         </Text>
         <Box display="flex" flexDir="column">
           <Flex
-            gap={{ base: "12", md: "20" }}
-            ml={{ base: "4", md: "0" }}
-            justifyContent="center"
-            alignItems="center"
-          >
-            <Box display="flex" flexDir="column" gap="2" alignItems="center">
-              <Image
-                src={polygon}
-                h="14"
-                w="14"
-                alt="Polygon"
-                minH="14"
-                minW="14"
-              />
-              {/* Polygon Network */}
-            </Box>
-            <Box display="flex" flexDir="column" gap="2" alignItems="center">
-              <Image
-                h="14"
-                w="14"
-                src={solana}
-                alt="Solana"
-                rounded="full"
-                minH="14"
-                minW="14"
-              />
-              {/* Solana Foundation */}
-            </Box>
-            <Box display="flex" flexDir="column" gap="2" alignItems="center">
-              <Image
-                h="14"
-                w="14"
-                minH="14"
-                minW="14"
-                src={superteamdao}
-                alt="SuperteamDAO"
-                rounded="full"
-              />
-              {/* Superteam DAO */}
-            </Box>
-          </Flex>
-          <Flex
-            align="center"
-            flexDir={{ base: "column", md: "row" }}
             gap={{ base: "8", md: "16" }}
             ml={{ base: "4", md: "0" }}
-            mt="8"
             justifyContent="center"
-            alignContent="center"
+            flexWrap={"wrap"}
+            alignItems="center"
+            direction={{ base: "column", md: "row" }}
           >
             <Box display="flex" flexDir="column" gap="2" alignItems="center">
               <Image
@@ -189,6 +146,44 @@ const Header = () => {
                 // rounded="full"
               />
               {/* Buildspace */}
+            </Box>
+            <Box display="flex" flexDir="column" gap="2" alignItems="center">
+              <Image
+                src={polygon}
+                h="16"
+                w="40"
+                alt="Polygon"
+                minH="14"
+                minW="14"
+              />
+              {/* Polygon Network */}
+            </Box>
+            <Box display="flex" gap="2" alignItems="center">
+              <Image
+                h="24"
+                w="48"
+                src={solana}
+                alt="Solana"
+                minH="12"
+                minW="12"
+              />
+
+              {/* Solana Foundation */}
+            </Box>
+            <Box display="flex" gap="2" alignItems="center">
+              <Image
+                h="12"
+                w="12"
+                minH="12"
+                minW="12"
+                src={superteamdao}
+                alt="SuperteamDAO"
+                rounded="full"
+              />
+              <Text color={"#5423DF"} fontWeight={700} fontSize={"32"}>
+                superteam
+              </Text>
+              {/* Superteam DAO */}
             </Box>
             <Box display="flex" flexDir="column" gap="2" alignItems="center">
               <Image
